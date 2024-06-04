@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #000000; 
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #000;
+    position: relative;
+    border-bottom: 4px solid #fff;
+}
+
+header .logo img {
+    height: 120px;
+    margin-left: 75px;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 25px;
+    border-bottom: 2px solid transparent; 
+    margin-right: 20px;
+}
+
+header nav ul li a:hover {
+    color: #007BFF;
+    border-bottom: 2px solid #007BFF;
+}
+
+header nav .book-now {
+    position: absolute;
+    right: 100px;
+    padding: 15px 25px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 20px;
+}
+.about-section {
+    text-align: center;
+}
+
+.about-section h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.about-section p {
+    font-size: 22px;
+    margin-bottom: 40px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #fff;
+    line-height: 1.8; 
+}
+
+.about-images {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.about-images img {
+    width: 20%;
+    height: 400px;
+    object-fit: cover;
+    margin: 0;
+    padding: 0;
+    border: none;
+}

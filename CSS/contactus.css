@@ -1,0 +1,130 @@
+body {
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #000000; 
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #000;
+    position: relative;
+    border-bottom: 4px solid #fff;
+}
+
+header .logo img {
+    height: 120px;
+    margin-left: 75px;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 25px;
+    border-bottom: 2px solid transparent; 
+    margin-right: 20px;
+}
+
+header nav ul li a:hover {
+    color: #007BFF;
+    border-bottom: 2px solid #007BFF;
+}
+
+header nav .book-now {
+    position: absolute;
+    right: 100px;
+    padding: 15px 25px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.contact-section {
+    padding: 50px 30px;
+    text-align: left;
+}
+
+.contact-section h2 {
+    color: #fff;
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+.contact-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+.contact-info {
+    flex: 1;
+    padding: 20px;
+    text-align: left; 
+    margin-left: -175px;
+    margin-top: 0px;
+}
+
+.contact-info h3, .contact-info p {
+    color: #fff; 
+}
+
+.contact-info h3 {
+    font-size: 25px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.contact-info p {
+    font-size: 20px; 
+    margin: 10px 0; 
+}
+
+.contact-map {
+    flex: 1;
+    padding: 20px;
+}
+
+.contact-map iframe {
+    width: 100%;
+    height: 450px; /* Increased height */
+    border: 0;
+    border-radius: 10px;
+    margin-left: 50px;
+}
+
+.contact-map .address {
+    color: #fff; 
+    font-size: 20px; 
+    text-align: center;
+    margin-top: 10px; 
+}
+
+.more-info {
+    margin-top: 20px;
+}

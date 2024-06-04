@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Form - Matto's Barber Shop</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/book.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+          <img src="IMAGES/LOGO.png" alt="Matto's Barber Shop Logo" />
+        </div>
+        <nav>
+          <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link" href="Home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="service.html">Service</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="professionals.html">Our Experts</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="aboutus.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contactus.html">Contact Us</a>
+            </li>
+          </ul>
+        </nav>
+    </header>
+    <section class="booking-form-section py-5 d-flex align-items-center justify-content-center">
+        <div class="container">
+            <div class="booking-form-container bg-secondary text-white p-5 rounded">
+                <h2 class="mb-4 text-center">Booking Form</h2>
+                <form id="booking-form">
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="first-name">First Name</label>
+                            <input type="text" class="form-control" id="first-name" name="first-name" placeholder="First Name" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="last-name">Last Name</label>
+                            <input type="text" class="form-control" id="last-name" name="last-name" placeholder="Last Name" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="phone-number">Phone Number</label>
+                            <input type="text" class="form-control" id="phone-number" name="phone-number" placeholder="(XXX) - XXX - XXXX" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email" name="email" placeholder="something@something.com" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="booking-date">Booking Date</label>
+                            <input type="date" class="form-control" id="booking-date" name="booking-date" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="Worker">Barber or Colorist</label>
+                            <select class="form-control" id="Worker" name="Worker" required>
+                                <option value="">Select the Barber or the Colorist</option>
+                                <option>Brandon Black</option>
+                                <option>Emma Johnson</option>
+                                <option>David Williams</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="service">Service</label>
+                            <select class="form-control" id="service" name="service" required>
+                                <option value="">Select Service</option>
+                                <option>Basic Haircut ($24.99)</option>
+                                <option>Haircut + Beard ($35.99)</option>
+                                <option>Full Service ($44.99)</option>
+                                <option>Hair Dyeing ($59.99)</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="time">Time</label>
+                            <select class="form-control" id="time" name="time" required>
+                                <option value="">Select Hour</option>
+                                <option>8:00 AM</option>
+                                <option>8:30 AM</option>
+                                <option>9:00 AM</option>
+                                <option>9:30 AM</option>
+                                <option>10:00 AM</option>
+                                <option>10:30 AM</option>
+                                <option>11:00 AM</option>
+                                <option>11:30 AM</option>
+                                <option>12:00 PM</option>
+                                <option>12:30 PM</option>
+                                <option>1:00 PM</option>
+                                <option>1:30 PM</option>
+                                <option>2:00 PM</option>
+                                <option>2:30 PM</option>
+                                <option>3:00 PM</option>
+                                <option>3:30 PM</option>
+                                <option>4:00 PM</option>
+                                <option>4:30 PM</option>
+                                <option>5:00 PM</option>
+                                <option>5:30 PM</option>
+                                <option>6:00 PM</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-groupcenter">
+                        <label>Would you like to book this appointment regularly?</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="recurring" id="once" value="once" checked>
+                            <label class="form-check-label" for="once">
+                                No, just once
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="recurring" id="yes" value="yes">
+                            <label class="form-check-label" for="yes">
+                                Yes, make it regularly
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group" id="recurring-options" style="display: none;">
+                        <label for="recurring-interval">Select schedule:</label>
+                        <select class="form-control" id="recurring-interval" name="recurring-interval" disabled>
+                            <option value="">Select your schedule</option>
+                            <option value="weekly">Every week</option>
+                            <option value="biweekly">Every 2 weeks</option>
+                            <option value="monthly">Every month</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Book Now!</button>
+                    <p id="date-error" class="text-danger text-center mt-3" style="display:none;">We are closed on Sunday :( <br> Please select another date.</p>
+                </form>
+            </div>
+        </div>
+    </section>
+    <div id="payment-modal" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Payment</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Do you want to pay now or in-store?</p>
+                </div>
+                <div class="modal-footer">
+                    <button id="pay-now" class="btn btn-primary">Pay Now</button>
+                    <button id="pay-in-store" class="btn btn-secondary">Pay In-Store</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="custom-footer text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Follow Us</h5>
+                    <p>Instagram: @mattosbarbershop</p>
+                    <p>Facebook: mattosbarbershop</p>
+                    <p>Twitter: @mattosbarbershop</p>
+                    <p>Youtube: mattosbarbershop</p>
+                </div>
+                <div class="col-md-6">
+                    <h5>Contact</h5>
+                    <p>Address: 123 Barber Street, Ottawa, ON, Canada K1A 0B1</p>
+                    <p>Hours of Service: Monday - Saturday: 8 AM - 6 PM</p>
+                    <p>Phone: (613) 555-1234</p>
+                    <p>Email: <a href="mailto:matto@barbershop.com" class="text-white">matto@barbershop.com</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="JS/book.js"></script>
+</body>
+</html>

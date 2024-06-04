@@ -1,0 +1,105 @@
+body {
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #000000;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #000;
+    position: relative;
+    border-bottom: 4px solid #fff;
+}
+
+header .logo img {
+    height: 120px;
+    margin-left: 75px;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 25px;
+    border-bottom: 2px solid transparent; 
+    margin-right: 20px;
+}
+
+header nav ul li a:hover {
+    color: #007BFF;
+    border-bottom: 2px solid #007BFF;
+}
+
+header nav .book-now {
+    position: absolute;
+    right: 100px;
+    padding: 15px 25px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.confirmation-message-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+}
+
+.container.text-center.bg-secondary.text-white.p-5.rounded {
+    background-color: #444 !important;
+    padding: 50px;
+    border-radius: 30px !important;
+    max-width: 800px;
+    margin: auto;
+}
+
+h2 {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+p#confirmation-text {
+    color: #fff;
+    font-size: 22px;
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+img.img-fluid.mt-3 {
+    width: 200px;
+    height: 200px;
+    border-radius: 15px;
+    margin-top: 30px;
+}
+

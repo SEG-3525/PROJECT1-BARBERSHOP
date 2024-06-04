@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #000000; 
+    color: #ffffff;
+}
+
+.payment-form-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000000;
+}
+
+.payment-form-container {
+    background-color: rgba(175, 175, 175, 0.7);
+    padding: 40px;
+    border-radius: 25px; /* More rounded corners */
+    border: 2px solid #ffffff; /* Add white border */
+    width: 100%;
+    max-width: 600px;
+}
+
+.payment-form-container h2 {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 36px;
+}
+
+.form-row {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    width: 100%;
+}
+
+.btn {
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 20px;
+    margin-top: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 15px 25px;
+    color: #fff;
+}
+
+.pay-button {
+    background-color: #007BFF;
+    margin-bottom: 10px;
+}
+
+.pay-button:hover {
+    background-color: #0056b3;
+}
+
+.back-button {
+    background-color: #6c757d;
+    padding: 10px 20px; /* Smaller padding for smaller button */
+    font-size: 16px; /* Smaller font size for smaller button */
+    margin-top: 0px;
+}
+
+.back-button:hover {
+    background-color: #5a6268;
+}
+
+.back-button-container {
+    text-align: center;
+}

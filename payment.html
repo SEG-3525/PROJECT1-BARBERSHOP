@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment - Matto's Barber Shop</title>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="CSS/payment.css" />
+  </head>
+  <body>
+    <section class="payment-form-section">
+      <div class="payment-form-container">
+        <h2>Payment Information</h2>
+        <form id="payment-form">
+          <div class="form-row mb-3">
+            <div class="form-group col-12">
+              <label for="cardholder-name">Cardholder Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="cardholder-name"
+                name="cardholder-name"
+                placeholder="Cardholder Name"
+                required
+              />
+            </div>
+          </div>
+          <div class="form-row mb-3">
+            <div class="form-group col-12">
+              <label for="card-number">Card Number</label>
+              <input
+                type="text"
+                class="form-control"
+                id="card-number"
+                name="card-number"
+                placeholder="Card Number"
+                maxlength="16"
+                required
+              />
+            </div>
+          </div>
+          <div class="form-row mb-3">
+            <div class="form-group col-md-6">
+              <label for="expiry-date">Expiry Date</label>
+              <input
+                type="text"
+                class="form-control"
+                id="expiry-date"
+                name="expiry-date"
+                placeholder="MM/YY"
+                maxlength="5"
+                required
+              />
+            </div>
+            <div class="form-group col-md-6">
+              <label for="cvv">CVV</label>
+              <input
+                type="text"
+                class="form-control"
+                id="cvv"
+                name="cvv"
+                placeholder="CVV"
+                maxlength="3"
+                required
+              />
+            </div>
+          </div>
+          <div class="form-row mb-3">
+            <div class="col-12 text-center">
+              <button type="submit" class="btn btn-primary pay-button">
+                Pay Now
+              </button>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="col-12 text-center">
+              <button
+                type="button"
+                class="btn btn-secondary back-button"
+                onclick="window.location.href='book.html'"
+              >
+                Back
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="JS/payment.js"></script>
+  </body>
+</html>
