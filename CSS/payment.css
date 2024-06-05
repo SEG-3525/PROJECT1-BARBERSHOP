@@ -16,8 +16,8 @@ body {
 .payment-form-container {
     background-color: rgba(175, 175, 175, 0.7);
     padding: 40px;
-    border-radius: 25px; /* More rounded corners */
-    border: 2px solid #ffffff; /* Add white border */
+    border-radius: 25px; 
+    border: 2px solid #ffffff; 
     width: 100%;
     max-width: 600px;
 }
@@ -68,8 +68,8 @@ body {
 
 .back-button {
     background-color: #6c757d;
-    padding: 10px 20px; /* Smaller padding for smaller button */
-    font-size: 16px; /* Smaller font size for smaller button */
+    padding: 10px 20px; 
+    font-size: 16px;
     margin-top: 0px;
 }
 
