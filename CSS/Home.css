@@ -166,30 +166,33 @@ header nav ul li a:hover {
     font-size: 16px;
     line-height: 1.5;
 }
-footer {
-    background-color: #444 !important;
-    color: #fff;
-    text-align: left;
-    padding: 20px 0;
+.bg-custom {
     border-top: 4px solid #fff;
+    background-color: #444; 
+    padding-top: 20px; 
+  }
+  
 
-}
+  .social-icon i {
+    font-size: 2rem;
+    margin-right: 20px; 
+  }
+  
+  .social-icon:last-child i {
+    margin-right: 10px;}
+  
 
-footer h5 {
-    font-size: 20px;
-    margin-bottom: 10px;
-}
-
-footer p {
-    font-size: 16px;
-    margin-bottom: 5px;
-}
-
-footer a {
-    color: #75a7ff;
-    text-decoration: none;
-}
-
-footer a:hover {
-    text-decoration: underline;
-}
+  .myButton {
+    background-color: #007bff; 
+    border: none;
+    padding: 5px 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    text-transform: uppercase;
+    transition: background-color 0.3s;
+  }
+  
+  .myButton:hover {
+    background-color: #0056b3; 
+  }
+  
