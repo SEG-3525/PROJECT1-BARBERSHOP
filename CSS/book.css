@@ -135,7 +135,7 @@ header nav .book-now {
     margin-top: 5px;
 }
 
-bg-custom {
+.bg-custom {
     border-top: 4px solid #fff;
     background-color: #444 !important; 
     padding-top: 20px; 
