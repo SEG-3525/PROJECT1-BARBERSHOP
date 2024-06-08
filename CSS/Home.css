@@ -112,60 +112,6 @@ header nav ul li a:hover {
 .hero-content .hero-button:hover {
     background-color: #0056b3;
 }
-
-.professionals {
-    padding: 50px;
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    min-height: 100vh; /* Ensure full height */
-}
-
-.professionals h2 {
-    font-size: 36px;
-    margin-bottom: 30px;
-}
-
-.profiles {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    width: 100%;
-}
-
-.profiles {
-    background-color: #444 !important;
-    border-radius: 10px;
-    padding: 20px;
-    margin: 20px;
-    box-sizing: border-box;
-    text-align: left;
-    transition: transform 0.3s ease-in-out;
-}
-
-.profile:hover {
-    transform: scale(1.05);
-}
-
-.profile img {
-    width: 100%;
-    border-radius: 10px;
-    transition: transform 0.3s ease-in-out;
-}
-
-.profile img:hover {
-    transform: scale(1.05);
-}
-
-.profile h3 {
-    font-size: 24px;
-    margin-top: 10px;
-}
-
-.profile p {
-    font-size: 16px;
-    line-height: 1.5;
-}
 .bg-custom {
     border-top: 4px solid #fff;
     background-color: #444; 
