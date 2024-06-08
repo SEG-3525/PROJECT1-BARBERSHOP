@@ -64,14 +64,13 @@ header nav .book-now {
     font-size: 20px;
 }
 
-.professionals, .services {
-    padding: 20px;
+.services {
     background-color: #000000;
     color: #fff;
     text-align: center;
 }
 
-.professionals h2, .services h2 {
+.services h2 {
     font-size: 36px;
     margin-bottom: 50px;
     margin-top: 30px;
